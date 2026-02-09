@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlphaDrop — AI Background Removal in Your Browser</title>
+  <meta name="description" content="AI-powered background removal that runs entirely in your browser. Fast, private, and free. No uploads, no subscriptions, no limits.">
+  <meta property="og:title" content="AlphaDrop — AI Background Removal in Your Browser">
+  <meta property="og:description" content="Remove backgrounds instantly with AI. Fast, private, free. Works entirely in your browser.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="images/logo-48.png" alt="AlphaDrop logo" class="logo-img"> AlphaDrop
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#privacy">Privacy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://chromewebstore.google.com/detail/hbmfofpedlbllenmpnebikhadgkplobj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer" class="btn btn-primary nav-cta">
+        Add to Chrome
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Free Chrome Extension</div>
+        <h1>Remove Backgrounds Instantly.<br><span class="text-gradient">Right in Your Browser.</span></h1>
+        <p class="hero-subtitle">
+          AI-powered background removal that's fast, private, and completely free.
+          No uploads to external servers. No subscriptions. No limits.
+        </p>
+        <div class="hero-actions">
+          <a href="https://chromewebstore.google.com/detail/hbmfofpedlbllenmpnebikhadgkplobj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+            Add to Chrome — It's Free
+          </a>
+          <a href="https://www.youtube.com/watch?v=C6DoCea3Tao" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Watch Demo
+          </a>
+        </div>
+        <p class="hero-note">Works on Chrome 116+. No account required.</p>
+      </div>
+      <div class="hero-visual">
+        <img src="images/hero-screenshot.png" alt="AlphaDrop extension popup showing background removal in action" class="hero-image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2>Powerful Background Removal,<br>Simple to Use</h2>
+        <p>Two AI modes, professional refinement tools, and complete privacy — all in one extension.</p>
+      </div>
+
+      <!-- AI Modes -->
+      <div class="modes-grid">
+        <div class="mode-card">
+          <div class="mode-icon alpha">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-1.2 0-2.4.6-3 1.7A3.6 3.6 0 0 0 4.6 9c-1 .6-1.7 1.8-1.7 3s.7 2.4 1.7 3c-.3 1.2 0 2.5 1 3.4.8.8 2.1 1.2 3.3 1 .6 1 1.8 1.6 3 1.6s2.4-.6 3-1.7c1.2.3 2.5 0 3.4-1 .8-.8 1.2-2 1-3.3 1-.6 1.6-1.8 1.6-3s-.6-2.4-1.7-3c.3-1.2 0-2.5-1-3.4a3.7 3.7 0 0 0-3.3-1C14.4 3.6 13.2 3 12 3z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Alpha Mode</h3>
+          <p>Preserves soft edges and fine details like hair, fur, and semi-transparent elements. Ideal for portraits and complex subjects.</p>
+          <span class="mode-tag">Best for portraits</span>
+        </div>
+        <div class="mode-card">
+          <div class="mode-icon object">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3>Object Mode</h3>
+          <p>Creates clean, hard edges perfect for product photos, logos, and solid objects. Sharp cutouts every time.</p>
+          <span class="mode-tag">Best for products</span>
+        </div>
+      </div>
+
+      <!-- Feature Cards -->
+      <div class="features-grid">
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          </div>
+          <h4>Right-Click to Remove</h4>
+          <p>Right-click any image on the web and select "Remove Background" — no copying or downloading needed.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h4>Upload from Device</h4>
+          <p>Upload images directly from your computer. Process images one after another without refreshing.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><path d="M11 18H8a2 2 0 0 1-2-2V9"/></svg>
+          </div>
+          <h4>Refinement Tools</h4>
+          <p>Fine-tune results with Feather, Edge Adjust, Smooth, and Manual Eraser tools for pixel-perfect output.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h4>Crop & Download</h4>
+          <p>Crop both original and processed images, then download your results as transparent PNGs.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          </div>
+          <h4>Session Persistence</h4>
+          <p>Your work is saved if you close the popup. Come back anytime and pick up right where you left off.</p>
+        </div>
+        <div class="feature-card fade-in">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h4>Large Image Support</h4>
+          <p>Supports images up to 25 megapixels with an automatic resize option for even bigger files.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section class="section screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">In Action</span>
+        <h2>See AlphaDrop at Work</h2>
+        <p>Clean results in seconds — right from your browser toolbar.</p>
+      </div>
+      <div class="screenshots-grid">
+        <div class="screenshot-card screenshot-main">
+          <img src="images/hero-screenshot.png" alt="AlphaDrop main interface" loading="lazy">
+        </div>
+        <div class="screenshot-card">
+          <img src="images/before-after.png" alt="Before and after background removal comparison" loading="lazy">
+        </div>
+        <div class="screenshot-card">
+          <img src="images/refinement-tools.png" alt="AlphaDrop refinement tools panel" loading="lazy">
+        </div>
+        <div class="screenshot-card">
+          <img src="images/Sunflower.png" alt="Background removal example with sunflower" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2>Background Gone in Seconds</h2>
+        <p>Three simple steps to a clean, transparent image.</p>
+      </div>
+      <div class="steps">
+        <div class="step fade-in">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <h3>Choose Your Image</h3>
+            <p>Right-click any image on the web, or click the extension icon and upload a file from your computer.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step fade-in">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <h3>Select a Mode & Process</h3>
+            <p>Pick Alpha Mode for soft edges (portraits, hair) or Object Mode for hard edges (products, logos). Hit "Remove Background."</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step fade-in">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <h3>Refine & Download</h3>
+            <p>Use the built-in refinement tools if needed, then download your transparent PNG — ready to use anywhere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Privacy Section -->
+  <section class="section privacy" id="privacy">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Privacy First</span>
+        <h2>Your Images Never Leave Your Device</h2>
+        <p>AlphaDrop processes everything locally. No cloud. No servers. No exceptions.</p>
+      </div>
+      <div class="privacy-grid">
+        <div class="privacy-card fade-in">
+          <div class="privacy-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h4>100% Local Processing</h4>
+          <p>All AI processing happens on your device. Your images never leave your computer.</p>
+        </div>
+        <div class="privacy-card fade-in">
+          <div class="privacy-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </div>
+          <h4>No Data Collection</h4>
+          <p>No tracking, no analytics, no data sent to external servers. Ever.</p>
+        </div>
+        <div class="privacy-card fade-in">
+          <div class="privacy-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h4>No Account Required</h4>
+          <p>Install and start using immediately. No sign-ups, no logins, no friction.</p>
+        </div>
+        <div class="privacy-card fade-in">
+          <div class="privacy-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+          </div>
+          <h4>Works Offline</h4>
+          <p>After the initial setup, AlphaDrop works without an internet connection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="container cta-inner">
+      <h2>Ready to Remove Backgrounds?</h2>
+      <p>Join thousands of users who trust AlphaDrop for fast, private background removal.</p>
+      <div class="cta-actions">
+        <a href="https://chromewebstore.google.com/detail/hbmfofpedlbllenmpnebikhadgkplobj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer" class="btn btn-white btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+          Add to Chrome — It's Free
+        </a>
+      </div>
+      <p class="cta-note">Chrome 116+ required. Free forever.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#" class="nav-logo"><span class="logo-icon">&#9670;</span> AlphaDrop</a>
+        <span class="footer-sep"></span>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#privacy">Privacy</a>
+        <a href="https://chromewebstore.google.com/detail/hbmfofpedlbllenmpnebikhadgkplobj?utm_source=item-share-cb" target="_blank" rel="noopener noreferrer">Chrome Web Store</a>
+        <a href="https://www.youtube.com/watch?v=C6DoCea3Tao" target="_blank" rel="noopener noreferrer">YouTube</a>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:alphadrop86@gmail.com">alphadrop86@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 AlphaDrop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
