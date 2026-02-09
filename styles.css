@@ -475,9 +475,19 @@ ul {
 
 .screenshot-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
   display: block;
+}
+
+.screenshots-grid .screenshot-card:not(.screenshot-main) {
+  display: flex;
+  align-items: center;
+  background: var(--bg-alt);
+  padding: 12px;
+}
+
+.screenshots-grid .screenshot-card:not(.screenshot-main) img {
+  border-radius: var(--radius);
+  object-fit: contain;
 }
 
 /* --- How It Works --- */
